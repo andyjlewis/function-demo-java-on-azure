@@ -17,15 +17,13 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <functionAppName>walkthrough-$UniqueId$</functionAppName>
     </properties>
-
     <dependencies>
         <dependency>
-            <groupId>com.microsoft.azure</groupId>
-            <artifactId>azure-functions-java-core</artifactId>
-            <version>1.0.0-beta-2</version>
-        </dependency>
+                <groupId>com.microsoft.azure.functions</groupId>
+                <artifactId>azure-functions-java-library</artifactId>
+                <version>1.0.0-beta-4</version>
+            </dependency>
     </dependencies>
-
     <build>
         <pluginManagement>
             <plugins>
@@ -36,11 +34,10 @@
                 <plugin>
                     <groupId>com.microsoft.azure</groupId>
                     <artifactId>azure-functions-maven-plugin</artifactId>
-                    <version>0.1.7</version>
+                    <version>1.0.0-beta-2</version>
                 </plugin>
             </plugins>
         </pluginManagement>
-
         <plugins>
             <plugin>
                 <groupId>com.microsoft.azure</groupId>
@@ -92,7 +89,5 @@
                 </executions>
             </plugin>
         </plugins>
-
     </build>
-
 </project>
